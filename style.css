@@ -7,19 +7,19 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Hide radio buttons */
+
 input {
     display: none;
 }
 
-/* Whole page */
+
 main {
     min-height: 100vh;
     padding: 40px;
     transition: 0.5s;
 }
 
-/* Navigation */
+
 nav {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -40,12 +40,12 @@ nav label:hover {
     background: #eeeeee;
 }
 
-/* Link grids */
+
 .grid {
     display: none;
     grid-template-columns: repeat(4, 1fr);
     gap: 15px;
-    max-width: 800px;
+    max-width: 600px;
     margin: 30px auto;
 }
 
