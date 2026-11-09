@@ -95,7 +95,7 @@ nav label:hover {
 #Hobbies:checked ~ main .Hobbies-grid {
     display: grid;
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
 
     main {
         padding: 20px;
@@ -118,4 +118,41 @@ nav label:hover {
         padding: 15px;
         font-size: 14px;
     }
+}
+/*.homepage {
+    display: none;
+    max-width: 800px;
+    margin: 80px auto;
+    text-align: center;
+}
+.home-button-container {
+    display: flex;
+    justify-content: top-left;
+    margin-top: 20px;
+} */
+/*@media (max-width: 600px) {
+  .home-responsive-box {
+    background-color: lightcoral;
+  }
+}
+
+@media (min-width: 601px) {
+  .home-responsive-box {
+    background-color: lightseagreen;
+  }
+}*/
+.home-responsive-box {
+  background-color: lightblue;
+  padding: 20px;
+  text-align: center;
+}
+.home-responsive-box {
+  padding: 20px;
+  text-align: center;
+}
+#home:checked ~ main .homepage {
+    display: block;
+}
+#home:checked ~ main {
+    background-color: #a31010;
 }
