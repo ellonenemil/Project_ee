@@ -145,14 +145,48 @@ nav label:hover {
   background-color: lightblue;
   padding: 20px;
   text-align: center;
-}
-.home-responsive-box {
-  padding: 20px;
-  text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 100%;
 }
 #home:checked ~ main .homepage {
     display: block;
 }
 #home:checked ~ main {
     background-color: #a31010;
+}
+.imgbox {
+    position: relative;
+    width: 500px;
+}
+#show-image {
+    display: none;
+}
+.image-button {
+    display: block;
+    width: 200px;
+    padding: 15px;
+    margin: 20px auto;
+
+    background-color: lightblue;
+    text-align: center;
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+.image-button:hover {
+    background-color: skyblue;
+}
+.image-box {
+    display: none;
+    text-align: center;
+}
+#show-image:checked ~ .image-box {
+    display: block;
+}
+.image-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
