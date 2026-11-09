@@ -95,3 +95,27 @@ nav label:hover {
 #Hobbies:checked ~ main .Hobbies-grid {
     display: grid;
 }
+@media (max-width: 600px) {
+
+    main {
+        padding: 20px;
+    }
+
+    nav {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    nav label {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .grid a {
+        padding: 15px;
+        font-size: 14px;
+    }
+}
