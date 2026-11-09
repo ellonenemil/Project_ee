@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Hide radio buttons */
+input {
+    display: none;
+}
+
+/* Whole page */
+main {
+    min-height: 100vh;
+    padding: 40px;
+    transition: 0.5s;
+}
+
+/* Navigation */
+nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 800px;
+    margin: auto;
+}
+
+nav label {
+    padding: 15px;
+    background: white;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+nav label:hover {
+    background: #eeeeee;
+}
+
+/* Link grids */
+.grid {
+    display: none;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.grid a {
+    padding: 20px;
+    color: white;
+    background: #555;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.grid a:hover {
+    transform: scale(1.05);
+    background: #333;
+}
+
+#School:checked ~ main {
+    background: #dbeafe;
+}
+
+#School:checked ~ main .School-grid {
+    display: grid;
+}
+
+#Work:checked ~ main {
+    background: #dcfce7;
+}
+
+#Work:checked ~ main .Work-grid {
+    display: grid;
+}
+
+#Timewaste:checked ~ main {
+    background: #f3e8ff;
+}
+
+#Timewaste:checked ~ main .Timewaste-grid {
+    display: grid;
+}
+
+#Hobbies:checked ~ main {
+    background: #ffedd5;
+}
+
+#Hobbies:checked ~ main .Hobbies-grid {
+    display: grid;
+}
