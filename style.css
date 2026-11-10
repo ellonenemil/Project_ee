@@ -7,12 +7,6 @@ body {
     font-family: Arial, sans-serif;
 }
 
-
-input {
-    display: none;
-}
-
-
 main {
     min-height: 100vh;
     padding: 40px;
@@ -24,11 +18,13 @@ nav {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 10px;
+    width: 100%;
     max-width: 800px;
     margin: auto;
 }
 
 nav a {
+    display: block;
     padding: 15px;
     background-color: lightblue;
     color: black;
@@ -54,6 +50,7 @@ nav a:hover {
 }
 
 .grid a {
+    display: block;
     padding: 20px;
     color: white;
     background: #555;
@@ -68,36 +65,38 @@ nav a:hover {
     background: #333;
 }
 
-/* #School:checked ~ main {
-    background: #dbeafe;
-} */
-
-#School:checked ~ main .School-grid {
-    display: grid;
+.image-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: lightblue;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    touch-action: manipulation;
 }
-
-/* #Work:checked ~ main {
-    background: #dcfce7;
-} */ 
-
-#Work:checked ~ main .Work-grid {
-    display: grid;
+.image-button:hover {
+    background-color: skyblue;
+    transform: scale(1.05);
 }
-
-/* #Timewaste:checked ~ main {
-    background: #f3e8ff;
-} */
-
-#Timewaste:checked ~ main .Timewaste-grid {
-    display: grid;
+.image-box {
+    display: none;
+    margin-top: 15px;
 }
-
-/*#Hobbies:checked ~ main {
-    background: #ffedd5;
-} */
-
-#Hobbies:checked ~ main .Hobbies-grid {
-    display: grid;
+.image-box img {
+    width: 100%;
+    width: 500px;
+    height: auto;
+    border-radius: 8px;
+    margin: auto;
+}
+#show-image:checked ~ .image-box,
+#show-gm:checked ~ .image-box,
+#goose:checked ~ .image-box {
+    display: block;
 }
 @media (max-width: 800px) {
 
@@ -113,132 +112,21 @@ nav a:hover {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    nav label {
-        padding: 12px;
-        font-size: 14px;
-    }
-
-    .grid a {
-        padding: 15px;
-        font-size: 14px;
-    }
-}
-/*.homepage {
-    display: none;
-    max-width: 800px;
-    margin: 80px auto;
-    text-align: center;
-}
-.home-button-container {
-    display: flex;
-    justify-content: top-left;
-    margin-top: 20px;
-} */
-/*@media (max-width: 600px) {
-  .home-responsive-box {
-    background-color: lightcoral;
-  }
-}
-
-@media (min-width: 601px) {
-  .home-responsive-box {
-    background-color: lightseagreen;
-  }
-}*/
-/* .home-responsive-box {
-  background-color: lightblue;
-  padding: 20px;
-  text-align: center;
-    border-radius: 8px;
-    cursor: pointer;
-    box-sizing: border-box;
-    width: 100%;
-}
-#home:checked ~ main .homepage {
-    display: block;
-}
-#home:checked ~ main {
-    background-color: #ff746C; 
-} */
-/*.imgbox {
-    position: relative;
-    width: 500px;
-}
-#show-image {
-    display: none;
-}
-.image-button {
-    display: block;
-    width: 200px;
-    padding: 15px;
-    margin: 20px auto;
-
-    background-color: lightblue;
-    text-align: center;
-    border-radius: 8px;
-
-    cursor: pointer;
-}
-.image-button:hover {
-    background-color: skyblue;
-}
-.image-box {
-    display: none;
-    text-align: center;
-}
-#show-image:checked ~ .image-box {
-    display: block;
-}
-.image-box img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-} */
- .image-buttons {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-
-    max-width: 600px;
-    text-align: center;
-    margin: 30px auto;
-}
-.image-buttons input {
-    display: none;
-}
-.image-button {
-    display: block;
-    padding: 15px;
-
-    background-color: lightblue;
-    text-align: center;
-
-    border-radius: 8px;
-    cursor: pointer;
-
-    transition: 0.3s;
-}
-.image-button:hover {
-    background-color: skyblue;
-    transform: scale(1.05);
-}
-.image-box {
-    display: none;
-    margin-top: 15px;
-}
-.image-box img {
-    width: 500px;
-    height: auto;
-    border-radius: 8px;
-}
-#show-image:checked ~ .image-box,
-#show-gm:checked ~ .image-box,
-#goose:checked ~ .image-box {
-    display: block;
-}
-@media (max-width: 600px) {
     .image-buttons {
         grid-template-columns: 1fr;
+    }
+
+    nav a,
+    .grid a,
+    .image-button {
+        padding: 15px;
+        font-size: 16px;
+        min-height: 48px;
+    }
+        nav a:hover,
+    .grid a:hover,
+    .image-button:hover {
+        transform: none;
     }
 }
 @media (max-width: 450px) {
@@ -246,5 +134,9 @@ nav a:hover {
     nav,
     .grid {
         grid-template-columns: 1fr;
+    }
+
+    main {
+        padding: 12px;
     }
 }
