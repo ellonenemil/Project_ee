@@ -140,3 +140,6 @@ nav a:hover {
         padding: 12px;
     }
 }
+input[type="checkbox"] {
+    display: none;
+}
