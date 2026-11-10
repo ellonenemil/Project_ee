@@ -85,13 +85,16 @@ nav a:hover {
 .image-box {
     display: none;
     margin-top: 15px;
+    text-align: center;
 }
 .image-box img {
+    display: block;
     width: 100%;
-    width: 500px;
+    max-width: 500px;
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 8px;
-    margin: auto;
 }
 #show-image:checked ~ .image-box,
 #show-gm:checked ~ .image-box,
@@ -142,4 +145,16 @@ nav a:hover {
 }
 input[type="checkbox"] {
     display: none;
+}
+.image-box iframe {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+    margin: 20px auto;
+    border: none;
+}
+
+#goose:checked ~ .image-box {
+    display: block;
 }
