@@ -22,28 +22,32 @@ main {
 
 nav {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 10px;
     max-width: 800px;
     margin: auto;
 }
 
-nav label {
+nav a {
     padding: 15px;
-    background: white;
+    background-color: lightblue;
+    color: black;
     text-align: center;
+    text-decoration: none;
     border-radius: 8px;
-    cursor: pointer;
+    transition: 0.3s;
 }
 
-nav label:hover {
-    background: #eeeeee;
+nav a:hover {
+    background-color: skyblue;
+    transform: scale(1.05);
 }
 
 
 .grid {
-    display: none;
-    grid-template-columns: repeat(4, 1fr);
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(140px, 1fr));
     gap: 15px;
     max-width: 600px;
     margin: 30px auto;
@@ -64,33 +68,33 @@ nav label:hover {
     background: #333;
 }
 
-#School:checked ~ main {
+/* #School:checked ~ main {
     background: #dbeafe;
-}
+} */
 
 #School:checked ~ main .School-grid {
     display: grid;
 }
 
-#Work:checked ~ main {
+/* #Work:checked ~ main {
     background: #dcfce7;
-}
+} */ 
 
 #Work:checked ~ main .Work-grid {
     display: grid;
 }
 
-#Timewaste:checked ~ main {
+/* #Timewaste:checked ~ main {
     background: #f3e8ff;
-}
+} */
 
 #Timewaste:checked ~ main .Timewaste-grid {
     display: grid;
 }
 
-#Hobbies:checked ~ main {
+/*#Hobbies:checked ~ main {
     background: #ffedd5;
-}
+} */
 
 #Hobbies:checked ~ main .Hobbies-grid {
     display: grid;
@@ -141,7 +145,7 @@ nav label:hover {
     background-color: lightseagreen;
   }
 }*/
-.home-responsive-box {
+/* .home-responsive-box {
   background-color: lightblue;
   padding: 20px;
   text-align: center;
@@ -154,8 +158,8 @@ nav label:hover {
     display: block;
 }
 #home:checked ~ main {
-    background-color: #ff746C;
-}
+    background-color: #ff746C; 
+} */
 /*.imgbox {
     position: relative;
     width: 500px;
@@ -228,12 +232,19 @@ nav label:hover {
     border-radius: 8px;
 }
 #show-image:checked ~ .image-box,
-#show-wheel:checked ~ .image-box,
+#show-gm:checked ~ .image-box,
 #goose:checked ~ .image-box {
     display: block;
 }
 @media (max-width: 600px) {
     .image-buttons {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 450px) {
+
+    nav,
+    .grid {
         grid-template-columns: 1fr;
     }
 }
