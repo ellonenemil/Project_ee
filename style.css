@@ -5,12 +5,14 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
 }
 
 main {
     min-height: 100vh;
     padding: 40px;
     transition: 0.5s;
+    background-color: #f0f8ff;
 }
 
 
@@ -216,7 +218,7 @@ input[type=submit]:hover {
     height: 100%;
 
     opacity: 0;
-
+/* change slideshow 8-> 16s if I add more pictures */
     animation: slideshow 8s infinite;
 }
 .slide img {
@@ -236,6 +238,20 @@ input[type=submit]:hover {
 .slide:nth-child(4) {
     animation-delay: 6s;
 }
+/* to add more pictures if I want to
+.slide:nth-child(4) {
+    animation-delay: 8s;
+}
+.slide:nth-child(4) {
+    animation-delay: 10s;
+}
+.slide:nth-child(4) {
+    animation-delay: 12s;
+}
+.slide:nth-child(4) {
+    animation-delay: 14s;
+} */
+
 @keyframes slideshow {
 
     0% {
@@ -264,7 +280,7 @@ input[type=submit]:hover {
     padding: 15px 25px;
 
     background-color: lightblue;
-    color: black;
+    color: #263238;
 
     text-decoration: none;
     border-radius: 8px;
