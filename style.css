@@ -40,7 +40,12 @@ nav a:hover {
     background-color: skyblue;
     transform: scale(1.05);
 }
-
+/*attempt on having navigation buttons highlighted when selected - seems to work*/ 
+nav a.active {
+    background-color: deepskyblue;
+    color: white;
+    font-weight: bold;
+}
 
 .grid {
     display: grid;
@@ -218,8 +223,8 @@ input[type=submit]:hover {
     height: 100%;
 
     opacity: 0;
-/* change slideshow 8-> 16s if I add more pictures */
-    animation: slideshow 8s infinite;
+/* change slideshow 8-> 16s if I add more pictures - Changed*/
+    animation: slideshow 16s infinite;
 }
 .slide img {
     width: 100%;
@@ -238,19 +243,19 @@ input[type=submit]:hover {
 .slide:nth-child(4) {
     animation-delay: 6s;
 }
-/* to add more pictures if I want to
-.slide:nth-child(4) {
+/* to add more pictures if I want to - added peeposmash, peepobox, peepodance and meirl */
+.slide:nth-child(5) {
     animation-delay: 8s;
 }
-.slide:nth-child(4) {
+.slide:nth-child(6) {
     animation-delay: 10s;
 }
-.slide:nth-child(4) {
+.slide:nth-child(7) {
     animation-delay: 12s;
 }
-.slide:nth-child(4) {
+.slide:nth-child(8) {
     animation-delay: 14s;
-} */
+} 
 
 @keyframes slideshow {
 
