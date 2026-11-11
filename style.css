@@ -18,7 +18,7 @@ main {
 
 nav {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 10px;
     width: 100%;
     max-width: 800px;
@@ -50,7 +50,7 @@ nav a.active {
 .grid {
     display: grid;
     grid-template-columns:
-        repeat(auto-fit, minmax(140px, 1fr));
+        repeat(auto-fit, minmax(100px, 1fr));
     gap: 15px;
     max-width: 600px;
     margin: 30px auto;
@@ -60,7 +60,7 @@ nav a.active {
     display: block;
     padding: 20px;
     color: white;
-    background: #555;
+    background: skyblue;
     text-align: center;
     text-decoration: none;
     border-radius: 8px;
@@ -69,14 +69,14 @@ nav a.active {
 
 .grid a:hover {
     transform: scale(1.05);
-    background: #333;
+    background: deepskyblue;
 }
 
 .image-button {
     display: block;
     width: 100%;
     padding: 15px;
-    background-color: lightblue;
+    background-color: deepSkyBlue;
     color: black;
     text-align: center;
     text-decoration: none;
