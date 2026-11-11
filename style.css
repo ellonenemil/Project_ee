@@ -76,7 +76,7 @@ nav a.active {
     display: block;
     width: 100%;
     padding: 15px;
-    background-color: deepSkyBlue;
+    background-color: SkyBlue;
     color: black;
     text-align: center;
     text-decoration: none;
@@ -86,7 +86,7 @@ nav a.active {
     touch-action: manipulation;
 }
 .image-button:hover {
-    background-color: skyblue;
+    background-color: deepskyblue;
     transform: scale(1.05);
 }
 .image-box {
@@ -185,7 +185,7 @@ input[type=text], select {
 
 input[type=submit] {
   width: 100%;
-  background-color: #4CAF50;
+  background-color: skyblue;
   color: white;
   padding: 14px;
   margin: 8px 0;
@@ -195,7 +195,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: deepskyblue;
 }
 /*slideshow part
 */
