@@ -162,9 +162,6 @@ input[type="checkbox"] {
     border: none;
 }
 
-#goose:checked ~ .image-box {
-    display: block;
-}
 form {
   border-radius: 5px;
   background-color: #f2f2f2;
@@ -263,19 +260,19 @@ input[type=submit]:hover {
         opacity: 0;
     }
 
-    5% {
+    3% {
         opacity: 1;
     }
 
-    25% {
+    12% {
         opacity: 1;
     }
 
-    30% {
+    15% {
         opacity: 0;
     }
 
-    100% {
+    50% {
         opacity: 0;
     }
 }
